@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Maquette de site web</title>
-    <meta name="description" content="Maquette de site web avec PHP et JavaScript">
-    <link rel="stylesheet" href="style.css">
+    <title>Mon portefolio</title>
+    <meta name="description" content="Mon portefolio avec PHP et JavaScript">
+    <link rel="stylesheet" href="pages/style/style.css">
 </head>
 <body>
-    <h1>Maquette de site web</h1>
-    <p>Bienvenue sur ma maquette de site web.</p>
+    <h1>Mon portefolio</h1>
+    <p>Bienvenue sur mon portefolio.</p>
+    <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Etudes</a></li>
+                <li><a href="#">Professionel</a></li>
+                <li><a href="#">À propos</a></li>
+            </ul>
+        </nav>
     
     <?php
         // Code PHP pour afficher la date et l'heure actuelles
@@ -16,7 +24,7 @@
     
     <script>
         // Code JavaScript pour afficher un message d'alerte
-        alert("Bienvenue sur ma maquette de site web !");
+        alert("Bienvenue sur mon portefolio!");
     </script>
 </body>
 </html>
