@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(55, 80, 53);
+}
+
+a{
+    color: rgb(232, 241, 231);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+}
+
+#nav{
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+    justify-content: center;
+    width: 15%;
+}
+
+#haut{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;  
+}
+
+#haut1{
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    margin-left: 5px;
+}
+
+#haut2{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}

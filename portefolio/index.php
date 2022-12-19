@@ -6,25 +6,26 @@
     <link rel="stylesheet" href="pages/style/style.css">
 </head>
 <body>
-    <h1>Mon portefolio</h1>
-    <p>Bienvenue sur mon portefolio.</p>
-    <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Etudes</a></li>
-                <li><a href="#">Professionel</a></li>
-                <li><a href="#">À propos</a></li>
-            </ul>
-        </nav>
-    
-    <?php
-        // Code PHP pour afficher la date et l'heure actuelles
-        echo "Date et heure actuelles : " . date("Y-m-d H:i:s");
-    ?>
+    <div id="haut">
+        <div id="haut1">
+            <img src="asset/image/gif/entete.gif">
+        </div>
+        <div id="haut2">
+            <h1>Mon portefolio</h1>
+            <p>Bienvenue sur mon portefolio.</p>
+            <nav>
+                <div id="nav"><a href="#">Accueil</a></div>
+                <div id="nav"><a href="#">Etudes</a></div>
+                <div id="nav"><a href="#">Professionel</a></div>
+                <div id="nav"><a href="#">Projets personnels</a></div>
+                <div id="nav"><a href="#">À propos</a></div>
+            </nav>
+        </div>
+        
+    </div>
     
     <script>
-        // Code JavaScript pour afficher un message d'alerte
-        alert("Bienvenue sur mon portefolio!");
+        
     </script>
 </body>
 </html>
