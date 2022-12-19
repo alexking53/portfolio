@@ -1,31 +1,37 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mon portefolio</title>
-    <meta name="description" content="Mon portefolio avec PHP et JavaScript">
-    <link rel="stylesheet" href="pages/style/style.css">
-</head>
-<body>
-    <div id="haut">
-        <div id="haut1">
-            <img src="asset/image/gif/entete.gif">
-        </div>
-        <div id="haut2">
-            <h1>Mon portefolio</h1>
-            <p>Bienvenue sur mon portefolio.</p>
-            <nav>
-                <div id="nav"><a href="#">Accueil</a></div>
-                <div id="nav"><a href="#">Etudes</a></div>
-                <div id="nav"><a href="#">Professionel</a></div>
-                <div id="nav"><a href="#">Projets personnels</a></div>
-                <div id="nav"><a href="#">À propos</a></div>
-            </nav>
-        </div>
-        
-    </div>
-    
-    <script>
-        
-    </script>
+
+    <?php
+        require('header.php');
+
+        $page=array(
+            'Accueil' => 'index.php',
+            'Etudes' => 'pages/etude.php',
+            'Professionel' => 'pages/professionel.php',
+            'Projets personnels' => 'pages/perso.php',
+            'À propos' => 'pages/apropos.php',
+        );
+
+        if(!isset($_GET['page'])){
+            $page='index.php';
+        }
+        else{
+            switch($page){
+                case 'Accueil':
+                    include ('index.php');
+                    break;
+                case 'Etudes':
+                    include ('pages/etude.php');
+                    break;
+                case 'Professionel':
+                    include ('pages/professionel.php');
+                    break;
+                case 'Projets personnels':
+                    include ('pages/perso.php');
+                    break;
+                case 'À propos':
+                    include('pages/apropos.php');
+                    break;
+             }
+            }
+    ?> 
 </body>
 </html>
