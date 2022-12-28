@@ -1,3 +1,6 @@
-<?php
-    include "header.php";?>
-<p>A propos</p>
+
+    <?php
+     include "header.php";?>
+<body>
+    <p>A propos</p>
+</body>

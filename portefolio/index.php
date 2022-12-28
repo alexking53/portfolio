@@ -1,7 +1,8 @@
 
     <?php
-        require('header.php');
+        require('header.php');?>
 
+    <?php
         $page=array(
             'Accueil' => 'index.php',
             'Etudes' => 'pages/etude.php',

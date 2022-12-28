@@ -4,8 +4,8 @@
     <title>Mon portefolio</title>
     <meta name="description" content="Mon portefolio avec PHP et JavaScript">
     <link rel="stylesheet" href="asset/style/style.css">
-</head>
-<body>
+
+
     <div id="haut">
         <div id="haut1">
             <img src="asset/image/gif/entete.gif">
@@ -20,6 +20,6 @@
                 <div id="nav"><a href="pages/perso.php">Projets personnels</a></div>
                 <div id="nav"><a href="pages/apropos.php">À propos</a></div>
             </nav>
-        </div>
-        
+        </div>       
     </div>
+</head>

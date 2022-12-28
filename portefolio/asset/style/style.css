@@ -1,5 +1,9 @@
 body{
     background-color: rgb(150, 184, 147);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px black solid;
 }
 
 a{
