@@ -1,9 +1,11 @@
 body{
-    background-color: rgb(55, 80, 53);
+    background-color: rgb(150, 184, 147);
 }
 
 a{
-    color: rgb(232, 241, 231);
+    color: rgb(96, 1, 109);
+    font-weight: bold;
+    font-family: 'Calibri';
 }
 
 nav{
