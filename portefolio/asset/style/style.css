@@ -1,6 +1,9 @@
 body{
     background-color: rgb(150, 184, 147);
-    width: 60%;
+}
+
+#body{
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     border: 1px black solid;
@@ -31,18 +34,18 @@ nav{
     display: flex;
     flex-direction: row;
     width: auto;
-    height: auto;  
+    height: auto; 
 }
 
 #haut1{
     display: flex;
     flex-direction: row;
     width: 15%;
-    margin-left: 5px;
 }
 
 #haut2{
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 75%;
+    margin-left: 2%;
 }

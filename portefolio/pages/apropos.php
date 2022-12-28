@@ -1,6 +1,6 @@
+<?php
+    include "header.php";?>
 
-    <?php
-     include "header.php";?>
-<body>
+<div id="body">
     <p>A propos</p>
-</body>
+</div>
