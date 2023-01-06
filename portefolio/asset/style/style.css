@@ -92,15 +92,6 @@ table{
 
 /*Pour le a propos*/
 
-#contact{
-    width: 25%;
-    height: 300px;
-    margin-left: 10%;
-    background-color: rgb(204, 210, 135);
-    border: 1px solid rgb(45, 75, 1);
-    border-radius: 2%;
-}
-
 #case{
     width: 25%;
     height: max-content;
@@ -108,4 +99,5 @@ table{
     background-color: rgb(204, 210, 135);
     border: 1px solid rgb(45, 75, 1);
     border-radius: 2%; 
+    margin-bottom: 10px;
 }

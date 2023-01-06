@@ -13,16 +13,5 @@
                 <li><a href="">Stage 3:</a> <br/></li>
             </ul>
         </p>
-
-        <?php
-            $page=array(
-                'Xefi: 23 mai au 28 juin' => 'projets/luxuton.php'
-            );
-            switch($page){
-                case 'Xefi: 23 mai au 28 juin':
-                    include('projets/luxuton.php');
-                    break;
-            }
-        ?>
     </div>
 </div>

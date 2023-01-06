@@ -31,7 +31,7 @@
             }
     ?> 
     <div id="body">
-        <div id="contact">
+        <div id="case">
             <p>
                 <h2> Contact </h2> 
                 <img src="asset/image/jpg/gmail.jpg"> <a href="mailto:leo.trentesaux53@gmail.com"> leo.trentesaux53@gmail.com </a>
@@ -40,6 +40,11 @@
                 
                 
             </p>
+        </div>
+
+        <div id="case">
+            <h2>Mon CV</h2> <br/>
+            Cliquez <a href="asset/docs/cvTrentesaux.pdf">ici</a> pour le télécharger
         </div>
     </div>
 
