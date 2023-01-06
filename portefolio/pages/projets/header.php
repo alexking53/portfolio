@@ -16,9 +16,8 @@
             <nav>
                 <div id="nav"><a href="../../index.php">Accueil</a></div>
                 <div id="nav"><a href="../etude.php">Etudes</a></div>
-                <div id="nav"><a href="../professionel.php">Professionel</a></div>
+                <div id="nav"><a href="../projet.php">Projets professionels</a></div>
                 <div id="nav"><a href="../perso.php">Projets personnels</a></div>
-                <div id="nav"><a href="../apropos.php">À propos</a></div>
             </nav>
         </div>
         

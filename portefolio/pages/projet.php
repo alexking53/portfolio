@@ -1,7 +1,7 @@
 <?php
     include "header.php";?>
 
-<table>
+<table cellspacing="0" cellpadding="0">
     <?php
         
 

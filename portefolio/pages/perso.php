@@ -1,18 +1,30 @@
 <?php
     include "header.php";?>
 
-<table>
-    <td>
+<table cellspacing="0" cellpadding="0">
     <?php
-            //Liste des contenus avec les redirections, avec une id j
+        
 
-
-            //Crée une nouvelle ligne avec pour id i, et dont les cases prennent pour id k 1, 2 ou 3
-
-
-            //Scan la ligne sur la colonne au dessus. Si la case 1 de la ligne i-1 est vide, alors sur la case
-// 1 de la ligne i on ajoute le contenu. Sinon, on affiche le contenu dans la case 3
-   
+$array= array( "<div id='case'>
+                        <div id='caseh'>  N/A </div>
+                        <div id='caseb'> N/A </div>
+                        </div>", "<div id='case'>
+                        <div id='caseh'> N/A </div>
+                        <div id='caseb'> N/A </div>
+                        </div>", "<div id='case'>
+                        <div id='caseh'> N/A </div>
+                        <div id='caseb'> N/A </div>
+                        </div>");
+            $j=count($array);
+            for($i=0;$i<$j; $i++){
+                if($i%2==0){
+                    echo("<tr> <td id='cote1'>".$array[$i]."</td><td id='milieu'></td><td id='cote2'></td></tr>");
+                }
+                else{
+                    echo("<tr> <td id='cote1'></td><td id='milieu'></td><td id='cote2'>".$array[$i]."</td></tr>");
+                
+                }
+            }
 
         ?>
     </td>

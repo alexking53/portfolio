@@ -3,3 +3,4 @@
     
     echo("test");
 ?>
+<div id="mail">test</div>

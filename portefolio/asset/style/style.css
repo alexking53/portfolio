@@ -6,7 +6,6 @@ body{
     width: 70%;
     margin-left: 100px;
     margin-right: 100px;
-    border: 1px black solid;
 }
 
 a{
@@ -74,7 +73,7 @@ nav{
 #milieu{
     width: 4%;
     background-color: black;
-    border:5px solid black;
+    border:10px solid black;
 }
 
 #cote1{
@@ -88,4 +87,25 @@ nav{
 table{
     
     margin: 200px;
+}
+
+
+/*Pour le a propos*/
+
+#contact{
+    width: 25%;
+    height: 300px;
+    margin-left: 10%;
+    background-color: rgb(204, 210, 135);
+    border: 1px solid rgb(45, 75, 1);
+    border-radius: 2%;
+}
+
+#case{
+    width: 25%;
+    height: max-content;
+    margin-left: 10%;
+    background-color: rgb(204, 210, 135);
+    border: 1px solid rgb(45, 75, 1);
+    border-radius: 2%; 
 }
