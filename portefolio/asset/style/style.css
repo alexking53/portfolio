@@ -51,9 +51,9 @@ nav{
 
 
 /*Pour les cases*/
-#case{
+#casetab{
     height: 100px;
-    width: 600px;
+    width: 100%;
     border: 1px solid black;
 }
 
@@ -100,4 +100,9 @@ table{
     border: 1px solid rgb(45, 75, 1);
     border-radius: 2%; 
     margin-bottom: 10px;
+}
+
+#ligne{
+    display: flex;
+    flex-direction: row;
 }

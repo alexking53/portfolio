@@ -5,13 +5,13 @@
     <?php
         
 
-$array= array( "<div id='case'>
+$array= array( "<div id='casetab'>
                         <div id='caseh'> <a href='projets/luxuton.php'> Luxuton </a> </div>
                         <div id='caseb'> Luxuton est une entreprise fictive qui revisite des objets du quotidien en objet de luxes. </div>
-                        </div>", "<div id='case'>
+                        </div>", "<div id='casetab'>
                         <div id='caseh'> N/A </div>
                         <div id='caseb'> N/A </div>
-                        </div>", "<div id='case'>
+                        </div>", "<div id='casetab'>
                         <div id='caseh'> N/A </div>
                         <div id='caseb'> N/A </div>
                         </div>");

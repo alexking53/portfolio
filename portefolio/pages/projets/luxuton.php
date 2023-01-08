@@ -1,6 +1,12 @@
 <?php
     include "header.php";
-    
-    echo("test");
 ?>
-<div id="mail">test</div>
+<div id="body">
+    
+    <button>
+        <?php
+            echo "<a href='javascript:history.go(-1)'>Retour</a>";
+        ?>
+    </button>
+</div>
+
