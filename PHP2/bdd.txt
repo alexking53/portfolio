@@ -1,0 +1,4 @@
+admin2022;1;admin;admin;7, rue des archives;53000;Laval;admin@apbdd.com;administrateur
+pdupont2022_1;0;dupont;pierre;7, rue des archives;53000;Laval;pd@gmail.com;test
+pdurand2022_2;0;durand;pascal;7, rue des archives;53000;Laval;pd@gmail.com;test
+toto;0;desmastre;marie;7, rue des archives;53000;Laval;pd@gmail.com;test

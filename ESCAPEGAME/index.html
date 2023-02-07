@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>javascript</title>
+<style>
+#demo{
+    display:block;
+    position:relative;
+    width:1400px;
+    height:656px;
+    border:5px solid #24627b;
+	border-radius: 10px;
+    overflow:hidden;
+    margin: auto;
+}
+#background{    
+    position:absolute;
+    top:0;
+    left:-500px;
+}
+
+#fleche_gauche{
+    position:absolute;
+    z-index:2;
+    left: 0;
+    padding: auto;
+    top:45%;
+    width: 0;
+    height: 0;
+    
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    
+    border-right: 20px solid #00070a;
+    cursor: pointer;
+}
+#fleche_droite{
+    position:absolute;
+    z-index:2;
+    right: 0;
+    
+    padding: auto;
+    top:45%;
+    width: 0;
+    height: 0;
+    
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    
+    border-left: 20px solid#00070a;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+}
+
+.napparaitpas{
+		display:none;
+		/*width: 5%; margin:auto; left:0; right:0; top:10px; height: 5%;*/
+		}
+.apparait{
+		display:block;
+		width: 25%; margin:auto; left:0; right:0; top:5px; height: 50%;
+        position: absolute;
+        background-color: white;
+        padding:10px;
+		border:5px solid #24627b;
+		border-radius: 10px;
+        transform:scale(1) rotate(0);  
+        transition:all .25s;
+		}
+
+.fermer{
+    top: 0px; 
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+
+body{
+    width:1400px;
+    margin:auto;
+}
+main{
+    position: relative;
+}
+input{
+    border:1px solid rgb(24, 176, 223);
+    color:rgb(24, 176, 223);
+   
+    
+}
+
+</style>
+</head>
+<body>
+    <header>
+<h1>BTS SIO BLOC1 - JAVASCRIPT</h1>
+</header>
+<main>
+<div id="demo">
+    <img id="background" src="asset/background.png" usemap="#demog"/>
+    <map name="demog">
+        
+        <area class="ecran pointer"  shape="rect" coords="762,322,856,390" title="ecran d'ordinateur" />
+        <area class="sac pointer"  shape="rect" coords="911,439,963,510" title="image à retirer" />
+        <area class="telephone pointer"  shape="rect" coords="863,390,895,409" title="afficher le téléphone" />
+        <area class="imprimante pointer"  shape="rect" coords="2182,311,2280,353" title="imprimante à utiliser" />
+        <area class="feuille pointer"  shape="rect" coords="2435,322,2501,355" title="récuperer une feuille" />
+        <area class="poubelle pointer"  shape="rect" coords="611,451,643,493" title="un p'tit coup d'oeil dans la poubelle" />
+        <area class="boule_papier pointer"  shape="rect" coords="600,500,615,511" title="lire la boule de papier" />
+        
+        
+        
+    </map>
+    
+    <div id="fleche_gauche"></div>
+    <div id="fleche_droite"></div>
+    <div id="message">
+    
+        <div id="ecran_verouille" class="napparaitpas">
+            <div class="fermer" onclick='napparaitpas("#ecran_verouille")' >[ X ]</div>      		
+            <div id="ecran_resultat" style="margin-top:2%;margin-left:20%;">
+                <p><img src="asset/login" width="50px"></p>
+                <p><input type="text" name="login" placeholder="votre email" id="i_loginecran" value=""></p>
+                <p><input type="password" name="mdp" placeholder="votre autre mot de passe" id="i_mdpecran" value=""></p>
+                <p><input type="submit" value="ENTREZ" id="i_validerecran"></p>
+            </div>			
+        </div>
+
+        <div id="ecran_fichier" class="napparaitpas">
+            <div class="fermer" onclick='napparaitpas("#ecran_fichier")' >[ X ]</div>      		
+            <div id="fichier_resultat" >
+                <!--debut du doc -->
+            <DIV TYPE=HEADER>
+	
+		        <TABLE WIDTH=300 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0 FRAME=HSIDES>
+			
+			    <TR>
+				<TD WIDTH=300 VALIGN=TOP>
+					<P ALIGN=JUSTIFY STYLE="border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm">
+					<FONT FACE="Arial, sans-serif">Evaluation des connaissances     
+					                                   09/02/2021</FONT></P>
+					<P ALIGN=JUSTIFY><BR>
+					</P>
+					<P ALIGN=JUSTIFY><FONT FACE="Arial, sans-serif">PHP&nbsp;        
+					     : Se connecter à une base de données</FONT></P>
+					<P ALIGN=JUSTIFY><FONT FACE="Arial, sans-serif">Twig&nbsp;        
+					     : Les templates</FONT></P>
+					
+				</TD>
+			    </TR>
+		        </TABLE>
+	
+            </Div>
+            <p>pensez à imprimer le devoir</p>
+<!--fin du doc-->
+            </div>			
+        </div>
+        
+        <div id="sac" class="napparaitpas">   
+            <div class="fermer" onclick='napparaitpas("#sac")' >[ X ]</div>     		
+            <div id="cat" style="padding: 1%;text-align: center;top:1.em;">
+                <img src='asset/cat.jpg' style="width: 100%; border-radius: 10px;" alt="joe le chat">
+                <p>minette à 4 mois</p>
+            </div>			
+        </div>
+
+        <div id="telephone" class="napparaitpas" style="background-image:url('asset/background_4.png');width:320px;background-repeat: no-repeat;">
+            <div class="fermer" onclick='napparaitpas("#telephone")' >[ X ]</div>          		
+            <div id="telephone_resultat" style="margin-top:45%;margin-left:20%;">
+                <p><input type="password" name="mdp" placeholder="votre mot de passe" id="i_mdptel"></p>
+                <p><input type="submit" value="ENTREZ" id="i_validertel"></p>
+            </div>			
+        </div>
+
+        <div id="imprimante" class="napparaitpas">
+            <div class="fermer" onclick='napparaitpas("#imprimante")' >[ X ]</div>          		
+            <div id="imprimante_resultat">
+                Il faut vous faut une feuille!!
+            </div>			
+        </div>
+
+        <div id="feuille" class="napparaitpas">
+            <div class="fermer" onclick='napparaitpas("#feuille")' >[ X ]</div>          		
+            <div id="">
+                <p><img src="asset/feuille.png" width="300px"></p>
+                <p>Servez-vous de la feuille pour imprimer...</p>
+            </div>			
+        </div>
+
+        <div id="poubelle" class="napparaitpas">
+            <div class="fermer" onclick='napparaitpas("#poubelle")' >[ X ]</div>          		
+            <div id="">
+                <p><img src="asset/giphy.gif" width="200px" style="border-radius: 10px;"/></p>
+                <p>Vous en êtes rendu à faire les poubelles! tss tss...</p>
+            </div>			
+        </div>
+
+        <div id="boule_papier" class="napparaitpas">
+            <div class="fermer" onclick='napparaitpas("#boule_papier")' >[ X ]</div>          		
+            <div id="">
+                <p><h3>Recette du mot de passe</h3></p>
+                <p>nom du chat</p>
+                <p>suivi du nombre de chat</p>
+            </div>			
+        </div>
+
+    </div>
+</div>
+</main>
+<footer style="width:100%; text-align: center;margin-top: 10px;">
+  BLOC1 - TP Javascript  - btssio@copyright
+</footer>
+
+
+
+<script>
+    var deplace_gauche= +100;//A compléter
+    var deplace_droite= -100;//A compléter
+    var left=-500;
+    var larg=2844/4;
+    
+    
+    
+    majecouteur();
+
+    function majecouteur() {
+        document.querySelector('#fleche_gauche').addEventListener('click', gauche, false);
+        document.querySelector('#fleche_droite').addEventListener('click', droite, false);
+
+        document.querySelector('.ecran').addEventListener('click', function () { apparait("#ecran_verouille"); }, true);
+
+        document.querySelector('#i_validerecran').addEventListener('click', function () { ecran(); }, true);
+        document.querySelector('#i_validertel').addEventListener('click', function () { telephone(); }, true);
+        document.querySelector('.sac').addEventListener('click', function () { apparait("#sac"); }, true);
+        document.querySelector('.telephone').addEventListener('click', function () { apparait("#telephone"); }, true);
+        document.querySelector('.imprimante').addEventListener('click', function () { apparait("#imprimante"); }, true);
+        document.querySelector('.feuille').addEventListener('click', function () { apparait("#feuille"); }, true);
+        document.querySelector('.poubelle').addEventListener('click', function () { apparait("#poubelle"); }, true);
+        document.querySelector('.boule_papier').addEventListener('click', function () { apparait("#boule_papier"); }, true);
+    }
+
+    function divinit() {
+        napparaitpas("#sac");
+        napparaitpas("#telephone");
+        napparaitpas("#imprimante");
+        napparaitpas("#feuille");
+        napparaitpas("#poubelle");
+        napparaitpas("#boule_papier");
+        napparaitpas("#ecran_fichier");
+        napparaitpas("#ecran_verouille");
+    }
+
+    function init() {
+        if (left == 0) { document.querySelector('#fleche_gauche').style.display = 'none'; }
+        else { document.querySelector('#fleche_gauche').style.display = ''; }
+        if (left == -1400) { document.querySelector('#fleche_droite').style.display = 'none'; }
+        else { document.querySelector('#fleche_droite').style.display = ''; }
+
+    }
+
+    function gauche(){
+        document.querySelector("#background");
+        //alert('gauche');
+        if(left==0){
+            document.querySelector("#fleche_gauche").style.display="none";
+        }else{
+            left+=100;
+            document.querySelector("#fleche_droite").style.display="block";
+            document.querySelector('#background').style.left= left.toString()+ "px";
+        }
+    }
+    function droite(){
+       // alert('droite');
+       if(left==-1400){
+            document.querySelector("#fleche_droite").style.display="none";
+        }else{
+            left-=100;
+            document.querySelector("#fleche_gauche").style.display="block";
+            document.querySelector('#background').style.left= left.toString()+ "px";
+        }
+    }
+    
+    function apparait(div){
+       //A compléter
+       //alert('apparait');
+       document.querySelector(div).className="apparait";
+    }
+    function napparaitpas(div){
+        //A compléter
+        //alert('n\'apparait pas');
+        document.querySelector(div).className="napparaitpas";
+    }
+    function ecran(){
+        //A compléter
+        alert('ecran');
+    }
+    function telephone(){
+        //A compléter
+        alert('telephone');
+    }
+    
+
+</script>
+</body>
+</html>

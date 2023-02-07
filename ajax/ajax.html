@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Le test</title>
+        <meta charset="utf8" />
+    </head>
+    <body>
+        <div id="divrequette">Je clic ici!</div>
+        <div id="divreponse">Ma réponse</div>
+    </body>
+</html>
+<script>
+   document.querySelector("#divrequette").addEventListener('click', function(){
+    //document.querySelector('#divreponse').innerHTML="Test";
+    var objectRequest = new XMLHttpRequest();
+    objectRequest.onreadystatechange = function(){
+        //document.querySelector('#divreponse').innerHTML="Test";
+        if(objectRequest.readyState == 4 && objectRequest.status==200){
+            document.querySelector('#divreponse').innerHTML=objectRequest.responseText;
+        }
+    }
+    objectRequest.open("GET", "ajax_reponse.php");
+    objectRequest.send();
+   });
+</script>

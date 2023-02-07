@@ -1,0 +1,100 @@
+    /*
+    TP Créé par Mme Le Ray Delphine
+    Images et scénarii créés l'association TIGR
+    Code réalisé par les BTS SIO1 de l'année 2020-2021
+    Modifications faites par Mme Le Ray Delphine
+    */
+    
+    #demo {
+    display:inline-block;
+    position:relative;
+    width:1400px;
+    height:656px;
+    border:5px solid #24627b;
+    overflow:hidden;
+    margin:auto;
+    }
+    
+    #background {
+    position:absolute;
+    top:0px;
+    image-rendering: auto;   
+    }
+    
+    #fleche_gauche {
+    position:absolute;
+    z-index:2;
+    left:0;
+    top:45%;
+    width:0;
+    height:0;
+    border-top:16px solid transparent;
+    border-bottom:16px solid transparent;
+    border-right:20px solid #00070a;
+    cursor:pointer;
+    padding:auto;
+    
+    }
+    
+    
+    #fleche_droite {
+    position:absolute;
+    z-index:2;
+    right:0;
+    top:45%;
+    width:0;
+    height:0;
+    border-top:16px solid transparent;
+    border-bottom:16px solid transparent;
+    border-left:20px solid#00070a;
+    cursor:pointer;
+    padding:auto;
+    
+    }
+    
+    h1 {
+    text-align:center;
+    }
+    
+    .napparaitpas {
+    display:none;
+    }
+    
+    .apparait {
+    display:block;
+    width:25%;
+    left:0;
+    right:0;
+    top:5px;
+    height:50%;
+    position:absolute;
+    background-color:#FFF;
+    border:5px solid #24627b;
+    margin:auto;
+    padding:10px;
+    }
+    
+    .fermer {
+    top:0;
+    width:100%;
+    text-align:right;
+    cursor:pointer;
+    }
+    
+    .pointer {
+    cursor:pointer;
+    }
+    
+    body {
+    width:1400px;
+    margin:auto;
+    }
+    
+    main {
+    position:relative;
+    }
+    
+    input {
+    border:1px solid #18b0df;
+    color:#18b0df;
+    }
